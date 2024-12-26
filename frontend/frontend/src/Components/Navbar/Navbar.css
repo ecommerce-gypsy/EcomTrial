@@ -1,0 +1,257 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo section */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  width: 120px; /* Logo size */
+  height: auto;
+}
+
+.nav-logo p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #5a1e9c;
+  font-weight: 500;
+}
+
+.nav-menu a.active {
+  font-weight: bold;
+}
+
+.nav-menu hr {
+  margin-top: 5px;
+  border: none;
+  height: 3px;
+  background-color: red;
+  width: 20px;
+}
+
+/* Icons section */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Heart Icon Styling */
+.nav-heart-logo {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* General Navbar Styles */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background-color: #fff;
+border-bottom: 1px solid #ddd;
+font-family: Arial, sans-serif;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+/* Logo Section */
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.logo-img {
+height: 50px;
+}
+
+.logo-text {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+list-style: none;
+display: flex;
+gap: 30px;
+margin: 0;
+padding: 0;
+}
+
+.nav-links li a {
+text-decoration: none;
+color: purple;
+font-size: 1rem;
+font-weight: bold;
+position: relative;
+}
+
+.nav-links li a.active::after {
+content: "";
+display: block;
+width: 20px;
+height: 2px;
+background-color: red;
+position: absolute;
+bottom: -5px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.nav-links li a:hover {
+color: darkblue;
+}
+
+/* Icons Section */
+.nav-icons {
+display: flex;
+gap: 20px;
+align-items: center;
+position: relative;
+}
+
+.icon {
+font-size: 1.2rem;
+cursor: pointer;
+color: black;
+}
+
+.cart-icon {
+position: relative;
+}
+
+.cart-count {
+position: absolute;
+top: -8px;
+right: -8px;
+background-color: red;
+color: white;
+border-radius: 50%;
+font-size: 0.7rem;
+padding: 2px 6px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-links {
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.nav-icons {
+  margin-top: 10px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.logo {
+  justify-content: center;
+  width: 100%;
+}
+}
+
+@media (max-width: 480px) {
+.logo-text {
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.icon {
+  font-size: 1rem;
+}
+}
+
+}
+
+.nav-heart-logo.active-heart {
+  filter: grayscale(0%);
+  transform: scale(1.2); /* Slightly increases size */
+  color: red;
+
+}
+
+/* Cart Section */
+.nav-cart {
+  position: relative;
+}
+
+.nav-cart-icon {
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
+
+.nav-cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Login User Icon */
+.nav-user-icon {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-user-icon:hover {
+  transform: scale(1.1); /* Slightly increases size on hover */
+  filter: brightness(0.9); /* Slightly darkens the icon for effect */
+}
